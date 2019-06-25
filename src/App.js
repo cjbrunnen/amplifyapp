@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import AppBar from './components/AppBar'
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <p className="printzu-font">PrintZu</p>
-        </div>
+        <AppBar />
         <p className="App-intro">
-          Welcome to PrintZu
+          Welcome to the PrintZu
         </p>
       </div>
     );
