@@ -47,7 +47,7 @@ function MyAppBar() {
                     <Grid item xs={8}>
                         <Typography variant="h4" className={classes.logo}>
                             PrintZu
-                    </Typography>
+                        </Typography>
                     </Grid>
                     <Grid item xs={2}>
                         <IconButton edge="end" color="inherit" aria-label="Cart">
