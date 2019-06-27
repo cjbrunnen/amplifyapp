@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import SearchIcon from '@material-ui/icons/Search';
+import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -25,21 +26,22 @@ function Search() {
     const classes = useStyles();
     return (
         <div>
-            <Toolbar className={classes.toolbar}>
-                <Grid item xs={10}>
-                    <TextField
-                        id="standard-search"
-                        label="Search field"
-                        type="search"
-                        className={classes.textField}
-                        margin="normal"
-                    />
-                </Grid>
-                <Grid item xs={2}>
-                    <SearchIcon />
-                </Grid>
-            </Toolbar>
-
+            <Paper>
+                <Toolbar className={classes.toolbar}>
+                    <Grid item xs={10}>
+                        <TextField
+                            id="standard-search"
+                            label="Search field"
+                            type="search"
+                            className={classes.textField}
+                            margin="normal"
+                        />
+                    </Grid>
+                    <Grid item xs={2}>
+                        <SearchIcon />
+                    </Grid>
+                </Toolbar>
+            </Paper>
         </div>
     )
 }
